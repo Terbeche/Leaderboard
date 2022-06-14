@@ -1,7 +1,36 @@
-.hello {
-  color: red;
+body {
+  margin-left: 30%;
+  margin-top: 5rem;
 }
 
-body {
-  background-color: bisque;
+#score {
+  display: flex;
+  gap: 2rem;
+}
+
+#add-score {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  margin-bottom: 1rem;
+}
+
+#recent-score-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#refresh {
+  width: fit-content;
+}
+
+#score-board {
+  border: 0.3rem black solid;
+}
+
+li {
+  list-style-type: none;
 }
