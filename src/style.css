@@ -2,6 +2,7 @@ body {
   margin-left: 30%;
   margin-top: 5rem;
 }
+
 #score {
   display: flex;
   gap: 2rem;
