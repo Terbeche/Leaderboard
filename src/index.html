@@ -12,20 +12,17 @@
   <header><h1>Leaderboard</h1></header>
   <main id="score">
     <section id="recent-score">
-      <div id="recent-score-header">     <h2>Recebt score</h2>
-        <button id="refresh">Refresh</button></div>
+      <div id="recent-score-header">     <h2>Recent scores</h2>
+        <button type="button" id="refresh">Refresh</button></div>
  
-      <ul id="score-board"><li>name</li>
-      <li>name</li>
-    <li>name</li>
-  <li>name</li></ul>
+      <ul id="score-board"></ul>
     </section>
     <section id="add-score">
       <h2>Add your score</h2>
-      <form action="">
-        <input class="form-input" type="text" placeholder="Your name">
+      <form id="score-form">
+        <input class="form-input" name="name" type="text" placeholder="Your name">
         <br>
-        <input class="form-input" type="text" placeholder="Your score">
+        <input class="form-input" name="score" type="text" placeholder="Your score">
         <br>
         <button class="form-input" type="submit">Submit</button>
       </form>
