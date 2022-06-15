@@ -1,17 +1,17 @@
 // import _ from 'lodash';
 import './style.css';
 
-import './modules/score.js';
-import {sendScore, renderPlayers} from './modules/score.js';
+import { sendScore, renderPlayers } from './modules/score.js';
 
- const scoreForm = document.getElementById('score-form');
+const scoreForm = document.getElementById('score-form');
+const refresh = document.getElementById('refresh');
 
- scoreForm.onsubmit = (e) => {
-   e.preventDefault();
+scoreForm.onsubmit = (e) => {
+  e.preventDefault();
   sendScore();
- };
+};
 
- refresh.onclick = (e) => {
+refresh.onclick = (e) => {
   e.preventDefault();
   renderPlayers();
 };
