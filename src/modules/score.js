@@ -2,7 +2,7 @@ const scoreForm = document.getElementById('score-form');
 const nameInput = scoreForm.name;
 const scoreInput = scoreForm.score;
 const scoreBoard = document.getElementById('score-board');
-const id = 'tpbH0M4HiGifjDCgjsk54arzy4e7f';
+const id = 'jfhjHJHKU544MSLgjsk54arzy4e7f';
 const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores/`;
 
 export async function getPlayers() {

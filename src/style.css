@@ -1,6 +1,26 @@
-body {
-  margin-left: 30%;
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Dancing+Script:wght@700&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap');body {
+box-sizing: border-box;
   margin-top: 5rem;
+  font-family: 'Dancing Script', sans-serif;
+}
+
+#score{
+  margin: auto;
+  margin-top: 2rem;
+   background-color: #a1e0e3;
+   width: fit-content;
+   padding: 2rem;
+
+}
+
+#header-title{
+  margin: auto;
+  text-align: center;
+  border: #b96de8 solid 1rem;
+  border-radius: 25%;
+  width: fit-content;
+  padding: 0.5rem;
+  font-size: 5rem;
 }
 
 #score {
@@ -29,8 +49,30 @@ body {
 
 #score-board {
   border: 0.3rem black solid;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 li {
   list-style-type: none;
+}
+
+button {
+  color: #2035bd;
+  background-color: #b96de8;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.form-input{
+  padding: 0.5rem;
+}
+
+
+.score-div{
+  font-size: 1.5rem;
 }
