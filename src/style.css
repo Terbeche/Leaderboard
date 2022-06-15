@@ -1,19 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Dancing+Script:wght@700&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap');body {
-box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Dancing+Script:wght@700&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap');
+
+body {
+  box-sizing: border-box;
   margin-top: 5rem;
   font-family: 'Dancing Script', sans-serif;
 }
 
-#score{
+#score {
   margin: auto;
   margin-top: 2rem;
-   background-color: #a1e0e3;
-   width: fit-content;
-   padding: 2rem;
-
+  background-color: #a1e0e3;
+  width: fit-content;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
-#header-title{
+#header-title {
   margin: auto;
   text-align: center;
   border: #b96de8 solid 1rem;
@@ -23,11 +26,6 @@ box-sizing: border-box;
   font-size: 5rem;
 }
 
-#score {
-  display: flex;
-  gap: 2rem;
-}
-
 #add-score {
   display: flex;
   flex-direction: column;
@@ -35,6 +33,7 @@ box-sizing: border-box;
 
 .form-input {
   margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 
 #recent-score-header {
@@ -68,11 +67,6 @@ button {
   font-size: 1rem;
 }
 
-.form-input{
-  padding: 0.5rem;
-}
-
-
-.score-div{
+.score-div {
   font-size: 1.5rem;
 }
