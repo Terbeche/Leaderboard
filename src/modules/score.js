@@ -1,48 +1,52 @@
 const scoreForm = document.getElementById('score-form');
-const scoreBoard = document.getElementById('score-board');
 const nameInput = scoreForm.name;
 const scoreInput = scoreForm.score;
-const scoreArray = JSON.parse(localStorage.getItem('scoreArray')) || [];
+const scoreBoard = document.getElementById('score-board');
+const refresh = document.getElementById('refresh');
+const id = 'tpbH0M4HiGifjDCgjsk54arzyzut';
+const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores/`;
 
-export const addScore = (name, score) => {
-  if (Number.isNaN(Number(score)) || score === '') {
+export const sendScore = async () => {
+  try {
+      const res = await fetch(url, {
+        method: 'POST',
+        body: JSON.stringify({
+          user: nameInput.value,
+          score: scoreInput.value,
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      });
+      nameInput.value = '';
+      scoreInput.value = '';
+      renderPlayers();
+      return res.json();
+  } catch (error) {
+    console.log(error);
     return false;
   }
-  scoreArray.push({
-    name,
-    score,
-  });
+}
 
-  localStorage.setItem('scoreArray', JSON.stringify(scoreArray));
-  return {
-    name,
-    score,
-  };
-};
-
-export const displayScore = ({
-  name,
-  score,
-}) => {
-  if (Number.isNaN(Number(score)) || score === '') {
-    nameInput.value = '';
-    scoreInput.value = '';
+export async function getPlayers() {
+  try {
+    const res = await fetch(url);
+    return await res.json();
+  } catch (error) {
+    console.log(error);
     return false;
   }
-  const scoreLi = document.createElement('li');
-  scoreLi.classList.add('score-div');
+}
 
-  const nameAndScoreLabel = document.createElement('label');
-  nameAndScoreLabel.innerHTML = `${name} : ${score}`;
-  scoreLi.append(nameAndScoreLabel);
-
-  scoreBoard.append(scoreLi);
-
-  nameInput.value = '';
-  scoreInput.value = '';
-  return true;
-};
-
-export const displayScoreOnReload = () => {
-  scoreArray.forEach(displayScore);
-};
+export const renderPlayers = async () => {
+  const players = await getPlayers();
+   scoreBoard.innerHTML = '';
+    players.result.forEach((player) => {
+    const scoreLi = document.createElement('li');
+    scoreLi.classList.add('score-div');
+    const nameAndScoreLabel = document.createElement('label');
+    nameAndScoreLabel.innerHTML = `${player.user} : ${player.score}`;
+    scoreLi.append(nameAndScoreLabel);
+    scoreBoard.append(scoreLi);
+   });
+ };
