@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Terbeche/Set-Up-Webpack.git"
+    "url": "git+https://github.com/Terbeche/Leaderboard.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Terbeche/Set-Up-Webpack/issues"
+    "url": "https://github.com/Terbeche/Leaderboard/issues"
   },
   "homepage": "https://terbeche.github.io/Leaderboard/",
   "devDependencies": {
