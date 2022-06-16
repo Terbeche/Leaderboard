@@ -4,7 +4,7 @@
   "description": "> This is our microverse awesome books project on html + css+ modular javascript.",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --open",
     "server": "node server.js",
     "build": "webpack"
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/Terbeche/Set-Up-Webpack/issues"
   },
-  "homepage": "https://github.com/Terbeche/Set-Up-Webpack#readme",
+  "homepage": "https://terbeche.github.io/Leaderboard/",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
@@ -40,6 +40,7 @@
     "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "lodash": "^4.17.21"
   }
 }
