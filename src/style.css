@@ -67,6 +67,11 @@ button {
   font-size: 1rem;
 }
 
+button:hover {
+  background-color: #de8912;
+  cursor: pointer;
+}
+
 .score-div {
   font-size: 1.5rem;
 }

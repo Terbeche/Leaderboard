@@ -32,7 +32,7 @@
 - ![](https://img.shields.io/badge/JSON-violet)
 
 
-## periquities
+## Setup
 To get this project up and running, you should do the following;
 If you wish to run the project locally, please do the following:
 
