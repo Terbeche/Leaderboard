@@ -53,7 +53,7 @@ npm run build
 ```
 4.- and if you want to watch the changes live, run the following command (it will run the website on localhost:3000):
 ``` bash
-npm run server
+npm start
 ```
 
 
