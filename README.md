@@ -8,10 +8,14 @@
 
 ## Built With
 
-- html
-- CSS
-- Javascript
-- Linter
+- ![](https://img.shields.io/badge/Github-blueviolet)
+- ![](https://img.shields.io/badge/Javascript-blue)
+- ![](https://img.shields.io/badge/HTML-purple)
+- ![](https://img.shields.io/badge/CSS-blue)
+- ![](https://img.shields.io/badge/WEBPACK-violet)
+- ![](https://img.shields.io/badge/Babel-violet)
+- ![](https://img.shields.io/badge/API-black)
+- ![](https://img.shields.io/badge/JSON-violet)
 
 ## Link to project online
 
