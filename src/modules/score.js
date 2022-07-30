@@ -2,7 +2,7 @@ const scoreForm = document.getElementById('score-form');
 const nameInput = scoreForm.name;
 const scoreInput = scoreForm.score;
 const scoreBoard = document.getElementById('score-board');
-const id = 'jfhjHJHKU544MSLgjsk54arzy4e7f';
+const id = 'jfhjHJHKU544MSLgjsk54arzy4e7d';
 const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores/`;
 
 export async function getPlayers() {
@@ -10,7 +10,6 @@ export async function getPlayers() {
     const res = await fetch(url);
     return await res.json();
   } catch (error) {
-    console.log(error);
     return false;
   }
 }
@@ -45,7 +44,6 @@ export const sendScore = async () => {
     renderPlayers();
     return res.json();
   } catch (error) {
-    console.log(error);
     return false;
   }
 };
